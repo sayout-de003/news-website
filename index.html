@@ -15,16 +15,17 @@
             min-height: 100vh;
         }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            font-size: 24px;
+            padding: 20px 0;
+            font-size: 30px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #333;
             padding: 10px 0;
         }
         nav a {
@@ -43,48 +44,51 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            border-radius: 10px;
             flex: 1;
         }
         .news-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
         .news-item {
             background: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
+            overflow: hidden;
         }
         .news-item:hover {
             transform: scale(1.05);
-        }
-        .news-item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
         .news-item h3 {
             margin: 10px 0;
+            color: #333;
+            font-size: 22px;
+        }
+        .news-item p {
+            color: #555;
+            font-size: 16px;
         }
         .news-item a {
             text-decoration: none;
-            color: #333;
+            color: #007bff;
+            font-weight: bold;
         }
         .news-item a:hover {
-            color: #007bff;
+            color: #0056b3;
         }
         .ad-container {
             text-align: center;
-            margin: 20px 0;
-            padding: 10px;
+            margin: 30px 0;
+            padding: 15px;
             background: #fff;
             border: 1px solid #ddd;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         footer {
             text-align: center;
@@ -116,47 +120,39 @@
     </nav>
 
     <main>
-        <h2 style="color: #333; text-align: center;">Latest News - March 14</h2>
+        <h2 style="color: #333; text-align: center;">Latest News - March 14, 2025</h2>
         <div class="news-container">
             <div class="news-item">
-                <img src="assets/images/politics.jpg" alt="Politics News">
-                <h3><a href="news/politics.html">Political Update</a></h3>
-                <p>Government announces new economic reforms.</p>
+                <h3><a href="https://www.bbc.com/news/world-64909892">Political Crisis Unfolds in Country X</a></h3>
+                <p>The ongoing political unrest has led to widespread protests, with citizens demanding immediate reform from the government.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/tech.jpg" alt="Tech News">
-                <h3><a href="news/tech.html">Tech Innovation</a></h3>
-                <p>AI technology reaches new heights with latest advancements.</p>
+                <h3><a href="https://www.cnn.com/2025/03/14/tech/ai-breakthroughs-2025">AI Breakthroughs to Shape the Future of Technology</a></h3>
+                <p>In a series of groundbreaking innovations, AI systems have demonstrated remarkable capabilities in areas like healthcare, security, and entertainment.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/sports.jpg" alt="Sports News">
-                <h3><a href="news/sports.html">Sports Highlights</a></h3>
-                <p>Championship finals end with a thrilling match.</p>
+                <h3><a href="https://www.espn.com/sports/2025/03/14/world-championship-sports">Sports World Celebrates New Champions</a></h3>
+                <p>After an intense final game, the world champions of the sports league have been crowned, marking a historic moment in the sport's history.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/business.jpg" alt="Business News">
-                <h3><a href="news/business.html">Stock Market Recovery</a></h3>
-                <p>Markets show strong recovery following last week's downturn.</p>
+                <h3><a href="https://www.bloomberg.com/news/business/stock-market-rebound-2025">Stock Market Shows Promising Rebound After Recent Slumps</a></h3>
+                <p>Investors are regaining confidence as the stock market shows signs of recovery following weeks of volatility.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/entertainment.jpg" alt="Entertainment News">
-                <h3><a href="news/entertainment.html">Movie Buzz</a></h3>
-                <p>Upcoming blockbuster sets record-breaking pre-sales.</p>
+                <h3><a href="https://www.hollywoodreporter.com/entertainment/movies/blockbuster-movie-sets-record-pre-sale">Upcoming Movie Shatters Pre-Sale Records</a></h3>
+                <p>With unprecedented pre-sales numbers, the movie is expected to break box office records upon release.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/health.jpg" alt="Health News">
-                <h3><a href="news/health.html">Health & Wellness</a></h3>
-                <p>New study highlights benefits of daily exercise.</p>
+                <h3><a href="https://www.washingtonpost.com/health/2025/03/14/exercise-benefits-study">New Study Reveals Benefits of Regular Exercise</a></h3>
+                <p>Researchers found that daily physical activity has significant positive impacts on mental health, lifespan, and overall wellness.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/science.jpg" alt="Science News">
-                <h3><a href="news/science.html">Scientific Discovery</a></h3>
-                <p>Breakthrough in quantum computing changes the future.</p>
+                <h3><a href="https://www.scientificamerican.com/article/quantum-computing-breakthrough">Quantum Computing Achieves a Major Milestone</a></h3>
+                <p>A recent breakthrough in quantum computing promises to revolutionize computing power and advance scientific research.</p>
             </div>
             <div class="news-item">
-                <img src="assets/images/world.jpg" alt="World News">
-                <h3><a href="news/world.html">Global Affairs</a></h3>
-                <p>International summit discusses climate change solutions.</p>
+                <h3><a href="https://www.nytimes.com/2025/03/14/world/international-summit-climate-change">Global Leaders Meet to Discuss Climate Change Solutions</a></h3>
+                <p>World leaders have gathered to discuss critical solutions for combating climate change, with a focus on sustainability and international collaboration.</p>
             </div>
         </div>
         
