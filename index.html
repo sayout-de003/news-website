@@ -4,50 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily News Hub</title>
-
-    <!-- Ezoic Ad Integration -->
-    <script async src="//go.ezoic.net/ezoic.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            flex: 1;
+        }
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .news-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .news-item:hover {
+            transform: scale(1.05);
+        }
+        .news-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .news-item h3 {
+            margin: 10px 0;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .news-item a:hover {
+            color: #007bff;
+        }
+        .ad-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; display: flex; flex-direction: column; min-height: 100vh;">
+<body>
 
-    <!-- Header -->
-    <header style="background-color: #333; color: white; text-align: center; padding: 15px 0; font-size: 24px;">
+    <header>
         <h1>Daily News Hub</h1>
     </header>
 
-    <!-- Navigation -->
-    <nav style="display: flex; justify-content: center; background-color: #444; padding: 10px 0;">
-        <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a>
-        <a href="about.html" style="color: white; text-decoration: none; margin: 0 15px;">About</a>
-        <a href="contact.html" style="color: white; text-decoration: none; margin: 0 15px;">Contact</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="news/politics.html">Politics</a>
+        <a href="news/tech.html">Technology</a>
+        <a href="news/sports.html">Sports</a>
+        <a href="news/business.html">Business</a>
+        <a href="news/entertainment.html">Entertainment</a>
+        <a href="news/health.html">Health</a>
+        <a href="news/science.html">Science</a>
+        <a href="news/world.html">World</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main Content -->
-    <main style="max-width: 1000px; margin: 20px auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 5px; flex: 1;">
+    <main>
+        <h2 style="color: #333; text-align: center;">Latest News - March 14</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="assets/images/politics.jpg" alt="Politics News">
+                <h3><a href="news/politics.html">Political Update</a></h3>
+                <p>Government announces new economic reforms.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/tech.jpg" alt="Tech News">
+                <h3><a href="news/tech.html">Tech Innovation</a></h3>
+                <p>AI technology reaches new heights with latest advancements.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/sports.jpg" alt="Sports News">
+                <h3><a href="news/sports.html">Sports Highlights</a></h3>
+                <p>Championship finals end with a thrilling match.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/business.jpg" alt="Business News">
+                <h3><a href="news/business.html">Stock Market Recovery</a></h3>
+                <p>Markets show strong recovery following last week's downturn.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/entertainment.jpg" alt="Entertainment News">
+                <h3><a href="news/entertainment.html">Movie Buzz</a></h3>
+                <p>Upcoming blockbuster sets record-breaking pre-sales.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/health.jpg" alt="Health News">
+                <h3><a href="news/health.html">Health & Wellness</a></h3>
+                <p>New study highlights benefits of daily exercise.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/science.jpg" alt="Science News">
+                <h3><a href="news/science.html">Scientific Discovery</a></h3>
+                <p>Breakthrough in quantum computing changes the future.</p>
+            </div>
+            <div class="news-item">
+                <img src="assets/images/world.jpg" alt="World News">
+                <h3><a href="news/world.html">Global Affairs</a></h3>
+                <p>International summit discusses climate change solutions.</p>
+            </div>
+        </div>
         
-        <section id="latest-news" style="margin-bottom: 20px;">
-            <h2 style="color: #333;">Today's Important News - March 14</h2>
-
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 10px;"><strong>1. Global Markets Rally After Economic Rebound</strong> - <a href="https://www.reuters.com" target="_blank">Read more</a></li>
-                <li style="margin-bottom: 10px;"><strong>2. AI Breakthrough: New Model Can Mimic Human Thinking</strong> - <a href="https://www.bbc.com/news" target="_blank">Read more</a></li>
-                <li style="margin-bottom: 10px;"><strong>3. Champions League Quarter-Finals: Exciting Draws Announced</strong> - <a href="https://www.espn.com" target="_blank">Read more</a></li>
-                <li style="margin-bottom: 10px;"><strong>4. New Cybersecurity Threats Emerge in Financial Sector</strong> - <a href="https://www.cnbc.com" target="_blank">Read more</a></li>
-                <li style="margin-bottom: 10px;"><strong>5. Hollywood Blockbuster Set to Break Box Office Records</strong> - <a href="https://www.variety.com" target="_blank">Read more</a></li>
-            </ul>
-        </section>
-
-        <!-- Ezoic Ad Placement -->
-        <div id="ezoic-pub-ad-placeholder-1" style="text-align: center; margin: 20px 0;">
-            <script>
-                ezoicPubAd(1);
+        <div class="ad-container">
+            <script type="text/javascript">
+                (function() {
+                    var atOptions = {
+                        'key' : 'YOUR_ADSTERRA_AD_KEY',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="//www.topdisplayformat.com/' + atOptions.key + '/invoke.js"></scr' + 'ipt>');
+                })();
             </script>
         </div>
-
     </main>
 
-    <!-- Footer -->
-    <footer style="text-align: center; background-color: #333; color: white; padding: 15px 0; margin-top: auto;">
+    <footer>
         <p>&copy; 2025 Daily News Hub | <a href="contact.html" style="color: #f5f5f5; text-decoration: none;">Contact Us</a></p>
     </footer>
 
