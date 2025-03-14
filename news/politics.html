@@ -5,29 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politics News - Daily News Hub</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .news-section {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+        }
+        .news-item h3 {
+            margin: 0;
+        }
+        .news-item p {
+            margin: 5px 0;
+        }
+        .news-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        .ad-container {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header><h1>Politics News</h1></header>
     <nav><a href="../index.html">Home</a></nav>
-    <section>
-        <h2>Political Headlines</h2>
-        <p>Latest updates in politics...</p>
-    </section>
-
-    <!-- Adsterra Ad -->
-    <div class="ad-container">
-        <script type="text/javascript">
-            (function() {
-                var atOptions = {
-                    'key' : 'YOUR_ADSTERRA_AD_KEY',
-                    'format' : 'iframe',
-                    'height' : 250,
-                    'width' : 300,
-                    'params' : {}
-                };
-                document.write('<scr' + 'ipt type="text/javascript" src="//www.topdisplayformat.com/' + atOptions.key + '/invoke.js"></scr' + 'ipt>');
-            })();
-        </script>
+    <div class="container">
+        <section class="news-section">
+            <h2>Political Headlines</h2>
+            <!-- India News -->
+            <div class="news-item">
+                <h3>Former Philippine President Rodrigo Duterte Appears at The Hague</h3>
+                <p>Former Philippine president Rodrigo Duterte appeared by video link at the International Criminal Court (ICC) in The Hague, facing charges of crimes against humanity related to his "war on drugs." The hearing informed Duterte of his charges after a prolonged investigation, with a pre-trial hearing set for September 23 to determine if the evidence warrants a full trial.</p>
+                <a href="https://www.theguardian.com/world/live/2025/mar/14/rodrigo-duterte-philippines-hague-icc-latest-live-updates-news" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Indian Foreign Minister S. Jaishankar Calls for Reformed Global Order</h3>
+                <p>In a recent interview, Indian Foreign Minister S. Jaishankar expressed that the benefits of the liberal rules-based order are overstated and advocated for a reformed global architecture reflecting contemporary realities. He emphasized India's rise as the world's fifth-largest economy and its commitment to a multipolar world.</p>
+                <a href="https://www.ft.com/content/2877a710-8090-4104-b9c3-42a6b2d3a98f" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Trump Praises Productive Talks Between Putin and US Envoy</h3>
+                <p>President Trump praised productive talks between President Putin and US envoy Steve Witkoff, though confusion arose over whether Trump personally spoke with Putin. The discussions are part of ongoing efforts to address the Ukraine conflict.</p>
+                <a href="https://www.thetimes.co.uk/article/ukraine-war-latest-news-putin-trump-h289j2dnc" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Iraqi Forces Kill ISIS Leader in Joint Operation</h3>
+                <p>Iraqi national intelligence and U.S.-led coalition forces killed Abdallah Maki Mosleh al-Rifai, known as "Abu Khadija," the head of ISIS in Iraq and Syria, in an operation involving an airstrike in Anbar province.</p>
+                <a href="https://apnews.com/article/eb56ab8a4d8c07d0233206fe1bb55a06" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>PM Modi-led Panel Likely to Meet to Pick Election Commissioners</h3>
+                <p>The committee, headed by PM Modi and responsible for selecting Election Commission members, is expected to convene on March 14 or 15 to decide on candidates to fill the two currently vacant positions of election commissioners.</p>
+                <a href="https://timesofindia.indiatimes.com/india/pm-modi-led-panel-likely-to-meet-on-march-14/15-to-pick-2-election-commissioners/articleshow/108374009.cms" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Harvard Law Students Vote to Divest from Israeli War Machine</h3>
+                <p>Harvard Law students overwhelmingly passed a referendum calling on Harvard to divest its endowment from companies aiding violations of international humanitarian law, including Israel's actions in Gaza and its occupation of Palestine.</p>
+                <a href="https://www.democracynow.org/2025/3/14/headlines" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Trump and Putin Set to Discuss Possible Ceasefire in Ukraine</h3>
+                <p>Moscow announced that Presidents Trump and Putin will discuss a possible 30-day ceasefire in Russia’s war on Ukraine following talks with U.S. special envoy Steve Witkoff. Putin signaled openness to a truce proposal, listing conditions and concerns.</p>
+                <a href="https://www.democracynow.org/2025/3/14/headlines" target="_blank">Read more</a>
+            </div>
+            <div class="news-item">
+                <h3>Reform UK Set to Beat Labour in Runcorn and Helsby By-Election, Poll Suggests</h3>
+                <p>A recent poll indicates that Reform UK is poised to surpass Labour in the Runcorn and Helsby by-election, with the Conservative Party trailing in a distant third place. Labour faces challenges with voter turnout, which is crucial for a potential win.</p>
+                <a href="https://www.theguardian.com/politics/live/2025/mar/14/rachel-reeves-welfare-disability-cuts-labour-keir-starmer-uk-politics-live-news" target="_blank">Read more</a>
+            </div>
+        </section>
+        <!-- <aside class="ad-container">
+            <h2>Advertisement</h2>
+            <p>Your ad here</p>
+        </aside> -->
     </div>
 </body>
 </html>
