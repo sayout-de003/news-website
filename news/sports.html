@@ -116,6 +116,7 @@
 
         </section>
 
+
         <aside class="ad-container">
             <h2>Sponsored Ads</h2>
             <p>Ad space available. Contact us for details.</p>
@@ -126,6 +127,13 @@
     <footer style="text-align: center; padding: 20px; background-color: #333; color: #fff;">
         <p>&copy; 2025 Daily News Hub. All rights reserved.</p>
     </footer>
+
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+            window.history.replaceState(null, null, window.location.pathname.replace('.html', ''));
+        }
+      </script>
+      
 </body>
 </html>
 

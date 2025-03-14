@@ -217,6 +217,12 @@
     <footer>
         <p>© 2025 Daily News Hub. All Rights Reserved.</p>
     </footer>
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+            window.history.replaceState(null, null, window.location.pathname.replace('.html', ''));
+        }
+      </script>
+      
 
 </body>
 </html>

@@ -124,5 +124,11 @@
             <p>Your ad here</p>
         </aside> -->
     </div>
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+            window.history.replaceState(null, null, window.location.pathname.replace('.html', ''));
+        }
+      </script>
+      
 </body>
 </html>
